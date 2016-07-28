@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+
+<p>{{ app.user.username }}</p>
+
+    {% for x in result %}
+
+        <div style="width:250px;height:250px;display:inline-block">
+
+
+            <a href="{{ url('categorie',{ 'id' : x.id }) }}"><p>{{ x.name }}</p></a>
+            <div style="width:75%;height:75%">
+                <img  style="width:100%;height:100%" src="{{ x.photo }}" alt="pizza categorie "/>
+            </div>
+
+
+
+
+
+        </div>
+
+
+     {% endfor %}
+
+        <a href="{{ url('composer') }}">composez votre pizza</a>
+
+
+        </div>
+{% endblock %}
+
+

@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+<h1>azerty</h1>
+
+
+    {{ form_start(form) }}
+
+
+
+    <p>{{ form_label(form.nom,'nom: ') }}
+        {{ form_widget(form.nom) }}
+    </p>
+    <p>{{ form_label(form.pate,'pate: ') }}
+        {{ form_widget(form.pate) }}
+    </p>
+
+    <p>{{ form_label(form.base,'base: ') }}
+        {{ form_widget(form.base) }}
+    </p>
+
+    <p>{{ form_label(form.ingredients,'ingredients: ') }}
+        {{ form_widget(form.ingredients) }}
+    </p>
+
+
+
+    <p><input type="submit"/></p>
+    {{ form_end(form) }}
+
+
+{% endblock %}

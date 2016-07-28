@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+
+    {% for x in result %}
+    <div style="width:250px;height:250px;display:inline-block">
+
+
+       <p>{{ x.name }}</p>
+       <p>{{ x.ingredients }}</p>
+       <p>{{ x.prix }}</p>
+
+
+
+
+
+        </div>
+
+{% endfor %}
+<a href="{{ url('homepage') }}">retour</a>
+
+
+{% endblock %}

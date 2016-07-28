@@ -1,0 +1,5 @@
+AppBundle\Entity\Personnes:
+    personne{1..10}:
+        name: <name()>
+        age: <name()>
+        addresse: <name()>
